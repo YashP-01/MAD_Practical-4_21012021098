@@ -20,6 +20,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
                 >
                 <LinearLayout
                     android:orientation="vertical"
@@ -40,7 +43,9 @@
                 <EditText
                     android:layout_weight="0.4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -55,10 +60,16 @@
                             android:layout_weight="0"
                             android:text="Phone No." />
 
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
                         <EditText
                             android:layout_weight="0.6"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:ems="10"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -126,12 +137,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="0"
+                            android:textSize="16sp"
                             android:text="Confirm Password" />
 
                         <EditText
                             android:layout_weight="0.4"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textWebPassword"
+                            android:textSize="16sp"/>
 
                     </LinearLayout>
                 </LinearLayout>
