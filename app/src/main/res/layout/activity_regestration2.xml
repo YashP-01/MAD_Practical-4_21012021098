@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <LinearLayout
-                        android:padding="20dp"
+                        android:padding="10dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -42,14 +42,14 @@
 
                 <EditText
                     android:layout_weight="0.4"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
+                    android:ems="8"
                     android:inputType="text"/>
 
                     </LinearLayout>
                     <LinearLayout
-                        android:padding="20dp"
+                        android:padding="5dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -67,32 +67,33 @@
 
                         <EditText
                             android:layout_weight="0.6"
-                            android:layout_width="match_parent"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:ems="10"/>
 
                     </LinearLayout>
                     <LinearLayout
-                        android:padding="20dp"
+                        android:padding="5dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0"
+                            android:layout_weight="0.3"
                             android:text="City" />
 
                         <EditText
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0.6" />
+                            android:ems="8"
+                            android:inputType="text"
+                            android:layout_weight="0.5" />
 
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_weight="0.6"
-                        android:padding="20dp"
+                        android:padding="5dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -100,17 +101,19 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0"
+                            android:layout_weight="0.3"
                             android:text="E-mail" />
 
                         <EditText
-                            android:layout_weight="0.4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:ems="8"
+                            android:inputType="text"/>
 
                     </LinearLayout>
                     <LinearLayout
-                        android:padding="20dp"
+                        android:padding="5dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -121,14 +124,19 @@
                             android:layout_weight="0"
                             android:text="Password" />
 
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
                         <EditText
                             android:layout_weight="0.4"
-                            android:layout_width="match_parent"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"/>
 
                     </LinearLayout>
                     <LinearLayout
-                        android:padding="20dp"
+                        android:padding="5dp"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
@@ -137,12 +145,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="0"
-                            android:textSize="16sp"
-                            android:text="Confirm Password" />
+                            android:text="Confirm Password"/>
 
                         <EditText
                             android:layout_weight="0.4"
-                            android:layout_width="match_parent"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:inputType="textWebPassword"
@@ -151,4 +158,21 @@
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:padding=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:gravity="center"
+                android:elevation="20dp">
+                
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Register">
+
+                </Button>
+
+            </LinearLayout>
 </LinearLayout>
